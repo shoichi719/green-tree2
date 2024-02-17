@@ -1,0 +1,82 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  color: #333;
+}
+p{
+  font-size: 16px;
+  line-height: 200%;
+}
+a{
+  transition: .5s;
+}
+a:hover{
+  opacity: .5s;
+}
+/* header */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px #707070;
+  padding: 0 60px;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+header>a img{
+  width: 73.73px;
+  height: 92.04px;
+}
+header nav ul{
+  display: flex;
+  gap: 0 40px;
+}
+header li small{
+  display: block;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+header li strong{
+  font-size: 18px;
+}
+main{
+  margin-top: 120px;
+}
+/* kv */
+.kv{
+  width: 100%;
+  height: 49vw;
+  position: relative;
+  overflow: hidden;
+}
+.main-img{
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation: fade 15s infinite;
+}
+.kv div:first-of-type{
+  background-image: url(../img/kv.png);
+  z-index: 1000;
+}
+.kv div:nth-of-type(2){
+  background-image: url(../img/kv2.png);
+}
+.kv div{
+  width: 100px;
+  height: 100px;
+}
+.kv div:last-of-type{
+  background-image: url(../img/kv3.png);
+
+}
