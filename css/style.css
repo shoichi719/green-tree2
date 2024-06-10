@@ -25,12 +25,7 @@ h3 {
 .container {
   max-width: 1140px;
   padding: 0 20px;
-  margin: 0 70px;
-  display: flex;
-  gap: 0 40px;
-  align-items: center;
-  position: relative;
-  
+  margin: 0 auto;
 }
 /* button */
 .button {
@@ -39,6 +34,15 @@ h3 {
   width: 500px;
   height: 100px;
   margin: 0 auto;
+  padding: 0 70px;
+  display: flex;
+  gap: 0 40px;
+  align-items: center;
+  box-shadow: 0px 5px 0px #2f8103;
+}
+.button:hover{
+  opacity: 1;
+  box-shadow: none;
 }
 .button span {
   font-size: 20px;
@@ -59,6 +63,10 @@ h3 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+.button strong{
+  font-size: 24px;
+  color: #fff;
 }
 /* header */
 header {
