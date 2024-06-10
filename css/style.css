@@ -3,21 +3,65 @@ body {
   font-weight: 500;
   color: #333;
 }
-p{
+:root {
+  --myGreen: #3caa00;
+  --myYellow: #fafa0a;
+}
+P {
   font-size: 16px;
   line-height: 200%;
 }
-a{
-  transition: .5s;
+a {
+  transition: 0.5s;
 }
-a:hover{
-  opacity: .5s;
+a:hover {
+  opacity: 0.5s;
 }
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-weight: bold;
 }
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 70px;
+  display: flex;
+  gap: 0 40px;
+  align-items: center;
+  position: relative;
+  
+}
+/* button */
+.button {
+  background-color: var(--myGreen);
+  display: block;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+.button span {
+  font-size: 20px;
+  font-weight: bold;
+  width: 80px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.button span::after {
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-color: var(--myYellow);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
 /* header */
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,33 +75,33 @@ header{
   z-index: 1000;
   background-color: #fff;
 }
-header>a img{
+header > a img {
   width: 73.73px;
   height: 92.04px;
 }
-header nav ul{
+header nav ul {
   display: flex;
   gap: 0 40px;
 }
-header li small{
+header li small {
   display: block;
   font-size: 14px;
   margin-bottom: 10px;
 }
-header li strong{
-  font-size: 18px;
+header li strong {
+  font-size: 20px;
 }
-main{
-  margin-top: 120px;
+main {
+  padding-top: 120px;
 }
 /* kv */
-.kv{
+.kv {
   width: 100%;
   height: 49vw;
   position: relative;
   overflow: hidden;
 }
-.main-img{
+.main-img {
   width: 100%;
   height: 100%;
   background-position: center center;
@@ -70,45 +114,52 @@ main{
   /* name fade アニメーション時間 15秒 回数無限 */
   animation: fade 15s infinite;
 }
-.kv div:first-of-type{
+.kv div:first-of-type {
   background-image: url(../img/kv.png);
   animation-delay: 0s;
 }
-.kv div:nth-of-type(2){
+.kv div:nth-of-type(2) {
   background-image: url(../img/kv2.png);
   animation-delay: 5s;
 }
-.kv div:last-of-type{
+.kv div:last-of-type {
   background-image: url(../img/kv3.png);
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
-@keyframes fade{
-  0%{
+@keyframes fade {
+  0% {
     opacity: 0;
   }
-  15%{
+  15% {
     opacity: 1;
     transform: scale(1);
   }
-  30%{
+  30% {
     opacity: 1;
   }
-  45%{
+  45% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 0;
-    transform: scale(1.3);
+    transform: scale(1.1);
   }
 }
-.kv h1{
+.kv h1 {
   font-size: 40px;
   color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform:  translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   text-align: center;
-  text-shadow: 0px 3px 6px rgba(0, 0, 0, .9);
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
+}
+.top-section {
+  padding-top: 100px;
+}
+.top-section p {
+  text-align: center;
+  margin-bottom: 60px;
 }
