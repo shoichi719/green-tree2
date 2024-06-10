@@ -27,6 +27,24 @@ h3 {
   padding: 0 20px;
   margin: 0 auto;
 }
+/* title */
+.title{
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.title::after{
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: var(--myGreen);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* button */
 .button {
   background-color: var(--myGreen);
@@ -164,10 +182,23 @@ main {
   text-align: center;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
 }
+/* spacer */
+.top-section2{
+  padding: 100px 0;
+}
+/* top-section */
 .top-section {
   padding-top: 100px;
 }
 .top-section p {
   text-align: center;
   margin-bottom: 60px;
+}
+/* top-section2 */
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+.top-section2 .content{
+
 }
