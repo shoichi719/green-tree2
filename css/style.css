@@ -71,7 +71,7 @@ h3 {
   z-index: 10;
 }
 .button span::after {
-  content: "";
+  content: '';
   width: 80px;
   height: 80px;
   background-color: var(--myYellow);
@@ -150,7 +150,7 @@ main {
 }
 .kv div:last-of-type {
   background-image: url(../img/kv3.png);
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 @keyframes fade {
   0% {
@@ -183,7 +183,9 @@ main {
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.9);
 }
 /* spacer */
-.top-section2, .top-section3 {
+.top-section2,
+.top-section3,
+.top-section4 {
   padding: 100px 0;
 }
 /* top-section */
@@ -202,37 +204,85 @@ main {
 .top-section2 .content {
   width: 32%;
 }
-.top-section2 .container h3{
+.top-section2 .container h3 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 40px;
 }
-.top-section2 .container h3 strong{
-  background: linear-gradient(transparent 0%, transparent 60%, var(--myYellow) 65%);
+.top-section2 .container h3 strong {
+  background: linear-gradient(
+    transparent 0%,
+    transparent 60%,
+    var(--myYellow) 65%
+  );
 }
-.top-section3{
+.top-section3 {
   background-color: #e8ffd9;
 }
-.top-section3 h2{
+.top-section3 h2 {
   font-size: 35px;
   text-align: center;
   margin-bottom: 40px;
 }
-.top-section3 .flex{
+.top-section3 .flex {
+  max-width: 910px;
   margin: 0 auto 60px;
 }
-.top-section3 .set{
+.top-section3 .set {
   width: 48%;
 }
-.set strong{
+.set strong {
   font-size: 20px;
 }
-.set p{
+.set p {
   padding: 10px 0;
 }
-.set p span{
+.set p span {
   font-size: 16px;
 }
-.set img{
+.set img {
   width: 100%;
+}
+/* .top-section4 */
+.top-section4 .qa:not(:last-of-type){
+  margin-bottom: 20px;
+}
+.qa{
+  padding: 15px 20px;
+  border: solid 1px #e0e0e0;
+  width: 703px;
+  margin: 0 auto;
+  background-color: #e8ffd9;
+}
+.q{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.q.show{
+  margin-bottom: 20px;
+}
+.q strong{
+  font-size: 20px;
+}
+.q p{
+  font-size: 20px;
+  font-weight: bold;
+  width: 91%;
+}
+.q img{
+  width: 20px;
+  transition: .5s;
+}
+.q.show img{
+  transform: rotate(180deg);
+}
+.a div{
+  display: flex;
+  align-items: center;
+}
+.a strong{
+  font-size: 20px;
+  padding-right: 20px;
 }
